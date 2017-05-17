@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SI0-A0-ubU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SI0-A0-ubU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -143,49 +143,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-NX-iB8">
-                                <rect key="frame" x="20" y="134.5" width="335" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="yUB-C5-RAp"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="8JU-Ec-rtx" id="Xmn-9w-Toh"/>
-                                    <outlet property="delegate" destination="8JU-Ec-rtx" id="PjA-li-Xcq"/>
-                                </connections>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD NEW EVENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-XP-Gb4">
-                                <rect key="frame" x="10" y="84" width="355" height="40.5"/>
+                                <rect key="frame" x="10" y="84" width="355" height="52"/>
                                 <color key="tintColor" red="0.13431154640000001" green="0.34543085709999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="35"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4f-1i-72f">
-                                <rect key="frame" x="10" y="294.5" width="110" height="30"/>
+                                <rect key="frame" x="10" y="313" width="110" height="52"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWA-fG-A0Q">
-                                <rect key="frame" x="10" y="344.5" width="355" height="23"/>
+                                <rect key="frame" x="10" y="385" width="355" height="23"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yx-n4-hDm">
-                                <rect key="frame" x="125" y="294.5" width="240" height="30"/>
+                                <rect key="frame" x="125" y="313" width="240" height="52"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mh7-v0-oIh">
-                                <rect key="frame" x="10" y="377.5" width="355" height="217.5"/>
+                                <rect key="frame" x="10" y="418" width="355" height="157"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c17-in-Isw">
-                                <rect key="frame" x="10" y="615" width="355" height="32"/>
+                                <rect key="frame" x="10" y="595" width="355" height="52"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 <state key="normal" title="Save">
@@ -195,9 +185,17 @@
                                     <action selector="btnSave:" destination="8JU-Ec-rtx" eventType="touchUpInside" id="4n5-Vy-zU2"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PeH-NX-iB8">
+                                <rect key="frame" x="20" y="132" width="335" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8JU-Ec-rtx" id="Xmn-9w-Toh"/>
+                                    <outlet property="delegate" destination="8JU-Ec-rtx" id="PjA-li-Xcq"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PeH-NX-iB8" firstAttribute="height" secondItem="q4f-1i-72f" secondAttribute="height" multiplier="3" id="2kp-qo-61f"/>
                             <constraint firstItem="nn0-XP-Gb4" firstAttribute="centerX" secondItem="r3Y-Kz-RAE" secondAttribute="centerX" id="6MM-xS-MGS"/>
                             <constraint firstItem="3yx-n4-hDm" firstAttribute="leading" secondItem="q4f-1i-72f" secondAttribute="trailing" constant="5" id="6Mg-rv-Bzw"/>
                             <constraint firstItem="RsT-0m-rdW" firstAttribute="top" secondItem="c17-in-Isw" secondAttribute="bottom" constant="20" id="Dcc-Kj-1at"/>
@@ -210,12 +208,15 @@
                             <constraint firstAttribute="trailing" secondItem="PeH-NX-iB8" secondAttribute="trailing" constant="20" id="b40-Q7-Rhr"/>
                             <constraint firstAttribute="trailing" secondItem="nn0-XP-Gb4" secondAttribute="trailing" constant="10" id="cqo-0L-hjQ"/>
                             <constraint firstAttribute="trailing" secondItem="GWA-fG-A0Q" secondAttribute="trailing" constant="10" id="cxa-kd-xcQ"/>
+                            <constraint firstItem="PeH-NX-iB8" firstAttribute="height" secondItem="nn0-XP-Gb4" secondAttribute="height" multiplier="3" id="dC0-I0-hbg"/>
                             <constraint firstItem="mh7-v0-oIh" firstAttribute="leading" secondItem="r3Y-Kz-RAE" secondAttribute="leading" constant="10" id="efY-Ll-vgV"/>
                             <constraint firstItem="q4f-1i-72f" firstAttribute="leading" secondItem="r3Y-Kz-RAE" secondAttribute="leading" constant="10" id="gvc-SH-aJG"/>
+                            <constraint firstItem="PeH-NX-iB8" firstAttribute="height" secondItem="c17-in-Isw" secondAttribute="height" multiplier="3" id="hH4-pd-TVO"/>
                             <constraint firstItem="PeH-NX-iB8" firstAttribute="leading" secondItem="r3Y-Kz-RAE" secondAttribute="leading" constant="20" id="kjA-xh-42e"/>
                             <constraint firstItem="3yx-n4-hDm" firstAttribute="top" secondItem="PeH-NX-iB8" secondAttribute="bottom" constant="10" id="kvQ-th-plE"/>
                             <constraint firstItem="GWA-fG-A0Q" firstAttribute="top" secondItem="q4f-1i-72f" secondAttribute="bottom" constant="20" id="oXm-yK-mDP"/>
                             <constraint firstItem="3yx-n4-hDm" firstAttribute="centerY" secondItem="q4f-1i-72f" secondAttribute="centerY" id="pFZ-X4-VJm"/>
+                            <constraint firstItem="PeH-NX-iB8" firstAttribute="height" secondItem="mh7-v0-oIh" secondAttribute="height" id="pVs-5b-sQC"/>
                             <constraint firstItem="c17-in-Isw" firstAttribute="leading" secondItem="r3Y-Kz-RAE" secondAttribute="leading" constant="10" id="pmZ-1N-oaS"/>
                             <constraint firstItem="PeH-NX-iB8" firstAttribute="centerX" secondItem="r3Y-Kz-RAE" secondAttribute="centerX" id="q1u-GV-A5C"/>
                             <constraint firstAttribute="trailing" secondItem="3yx-n4-hDm" secondAttribute="trailing" constant="10" id="tUm-6c-50D"/>
@@ -226,6 +227,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="Dcc-Kj-1at" id="3Tg-yy-HsM"/>
                         <outlet property="dayPicker" destination="PeH-NX-iB8" id="MIa-JD-MLp"/>
                         <outlet property="txtDescription" destination="mh7-v0-oIh" id="xrC-ba-PAV"/>
                         <outlet property="txtTitle" destination="3yx-n4-hDm" id="9qI-Pt-XQP"/>
